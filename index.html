@@ -349,6 +349,9 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
                 <i class="fab fa-telegram"></i>
                 Subscribe Free
             </a>
+             <div class="timer">
+                Redirecting in <span id="count">25</span> seconds...
+            </div> 
 
             <div class="card-disclaimer">
                 <strong>Disclaimer:</strong> Cricket updates & analysis only. No betting or gambling promoted. Verify independently.
@@ -359,14 +362,25 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
     </div>
 
     <script>
-        // countdown timer
-        let time = 60;
-        const counter = document.getElementById("count");
-        const interval = setInterval(() => {
+
+        let time = 25;
+
+        let counter = document.getElementById("count");
+
+        setInterval(() => {
+
             time--;
-            if (counter) counter.innerText = time;
-            if (time <= 0) clearInterval(interval);
+
+            counter.innerText = time;
+
+            if (time <= 0) {
+
+                window.location.href = "https://t.me/+WfJH5ilSbMU0ODM1";
+
+            }
+
         }, 1000);
+
     </script>
 
 </body>
