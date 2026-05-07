@@ -38,7 +38,7 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            background: #A82323;
+            background: #1c1508;
             overflow-x: hidden;
             color: white;
             padding-top: 50px;
@@ -84,11 +84,11 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             max-width: 95vw;
             padding: 45px 30px;
             border-radius: 25px;
-            background: rgb(255 0 0 / 12%);
+            background: rgba(255, 255, 255, 0.07);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
-            box-shadow: 0 0 60px #1e3fff33;
+            box-shadow: 0 0 60px rgba(0,0,0,0.5);
         }
 
         @media (max-width: 600px) {
@@ -122,6 +122,36 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             }
         }
 
+        /* cricket badge */
+        .cricket-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(60, 100, 40, 0.35);
+            border: 1px solid rgba(100, 160, 60, 0.45);
+            border-radius: 50px;
+            padding: 6px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 12px rgba(80, 140, 60, 0.35);
+        }
+        .cricket-badge span.dot {
+            width: 7px;
+            height: 7px;
+            background: #7ec850;
+            border-radius: 50%;
+            display: inline-block;
+            animation: blink 1.4s ease-in-out infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.2; }
+        }
+
         /* profile */
 
         .profile-wrap {
@@ -139,7 +169,7 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             border-radius: 50%;
             z-index: 1;
             pointer-events: none;
-            background: conic-gradient(#e1c749 0deg, #e1c749 120deg, #fff 240deg, #71690d 360deg);
+            background: conic-gradient(#f5a623 0deg, #e8c32a 120deg, #fff 240deg, #f5a62399 360deg);
             filter: blur(1.5px);
             animation: spinBorder 2.2s linear infinite;
         }
@@ -147,7 +177,7 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            border: 5px solid #71690d;
+            border: 5px solid #f5a623;
             object-fit: cover;
             position: relative;
             z-index: 2;
@@ -193,20 +223,20 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             gap: 12px;
             padding: 20px 40px;
             border-radius: 60px;
-            background: linear-gradient(45deg, #e1c749, #7f6c11);
-            color: #fff;
+            background: linear-gradient(45deg, #f5a623, #e8c32a);
+            color: #1c1508;
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
             position: relative;
             animation: pulse 1.6s ease-in-out infinite;
-            box-shadow: 0 0 10px 2px #1e90ff88;
+            box-shadow: 0 0 10px 2px #f5a62388;
         }
         @keyframes pulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 10px 2px #1e90ff88; }
-            20% { transform: scale(1.08); box-shadow: 0 0 18px 6px #1e90ffcc; }
+            0%, 100% { transform: scale(1); box-shadow: 0 0 10px 2px #f5a62388; }
+            20% { transform: scale(1.08); box-shadow: 0 0 18px 6px #f5a623cc; }
             40% { transform: scale(1); }
-            60% { transform: scale(1.05); box-shadow: 0 0 14px 4px #7b2fffaa; }
+            60% { transform: scale(1.05); box-shadow: 0 0 14px 4px #e8c32aaa; }
         }
 
         .btn:hover {
@@ -273,6 +303,10 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
 
         <div class="card">
 
+            <div class="cricket-badge">
+                🏏 Cricket Updates &amp; Insights
+            </div>
+
             <div class="profile-wrap">
                 <span class="profile-spinner"></span>
                 <img src="shiv-profile.jpg" class="profile">
@@ -281,13 +315,13 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             <h2 style="padding-bottom: 5px;">👑 SHIV KALYAN👑</h2>
 
             <div class="text">
-                <p style="padding-bottom: 10px;">All prediction are based on knowledge and opinion.</p>
+                <p style="padding-bottom: 10px;">Honest analysis • Match insights • Community driven</p>
                 <p style="padding-bottom: 10px;">
                 ✅ Safe, private & secure community ✅ <br>
                 ✅ Timely market & trend updates ✅  <br>
                 ✅ 100% free to join ✅ <br>
                 </p>
-                <p>Disclaimer :- Channel is for entertainment purpose Not for any illegal activities.</p>
+                <p>Stay informed with transparent cricket analysis</p>
             </div>
 
             <a class="btn" href="https://t.me/+xxU1LGui7lg4ZjM9" target="_blank">
