@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -243,12 +244,36 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             transform: scale(1.1);
         }
 
-        /* circular timer */
+        /* timer */
+        .free-timer {
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .free-timer span {
+            color: #f5a623;
+            font-size: 22px;
+            font-weight: 900;
+        }
 
-        .timer {
-            margin-top: 25px;
-            font-size: 14px;
-            opacity: .9;
+        /* sub-text below button */
+        .sub-text {
+            margin-top: 14px;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        /* disclaimer inside card */
+        .card-disclaimer {
+            margin-top: 18px;
+            padding-top: 16px;
+            border-top: 1px dashed rgba(255,255,255,0.2);
+            font-size: 11px;
+            opacity: 0.6;
+            line-height: 1.6;
+            text-align: center;
         }
 
         /* disclaimer */
@@ -315,57 +340,37 @@ src="https://www.facebook.com/tr?id=916301474723118&ev=PageView&noscript=1"
             <h2 style="padding-bottom: 5px;">👑 SHIV KALYAN👑</h2>
 
             <div class="text">
-                <p style="padding-bottom: 10px;">Honest analysis • Match insights • Community driven</p>
-                <p style="padding-bottom: 10px;">
-                !! 12+ Years Experience !! <br>
-                </p>
-                <p>Stay informed with transparent cricket analysis</p>
+                <p style="padding-bottom: 18px;">Honest analysis • Match insights • Community driven</p>
+                <p style="padding-bottom: 10px;">!! 12+ Years Expertise</p>
             </div>
 
             <a class="btn" href="https://t.me/+xxU1LGui7lg4ZjM9" target="_blank">
 
                 <i class="fab fa-telegram"></i>
 
-                Join Now Free
-
-                <i class="fab fa-telegram"></i>
+                Subscribe Free
 
             </a>
 
-            <!-- <div class="timer">
-                Redirecting in <span id="count">15</span> seconds...
-            </div> -->
+            <p class="sub-text">Stay informed with transparent cricket analysis</p>
 
-        </div>
-
-        <div class="disclaimer">
-
-            This channel is for educational and informational purposes only.
+            <div class="card-disclaimer">
+                <strong>Disclaimer:</strong> This channel shares cricket updates, analysis, and general information for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify independently and act responsibly.
+            </div>
 
         </div>
 
     </div>
 
     <script>
-
-        // let time = 15;
-
-        // let counter = document.getElementById("count");
-
-        // setInterval(() => {
-
-        //     time--;
-
-        //     counter.innerText = time;
-
-        //     if (time <= 0) {
-
-        //         window.location.href = "https://t.me/+WfJH5ilSbMU0ODM1";
-
-        //     }
-
-        // }, 1000);
-
+        // countdown timer
+        let time = 60;
+        const counter = document.getElementById("count");
+        const interval = setInterval(() => {
+            time--;
+            if (counter) counter.innerText = time;
+            if (time <= 0) clearInterval(interval);
+        }, 1000);
     </script>
 
 </body>
